@@ -12,5 +12,6 @@ CREATE TABLE albums (
   genre VARCHAR(255),
   cost_price INT4,
   retail_price INT4,
+  stock_level INT4,
   artist_id INT4 REFERENCES artists(id)
 );
