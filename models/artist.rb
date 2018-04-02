@@ -31,4 +31,25 @@ class Artist
     SqlRunner.run( sql, values )
   end
 
+  def self.find(id)
+    sql = "SELECT * FROM artists
+    WHERE id = $1"
+    values = [id]
+    result = SqlRunner.run(sql ,values).first
+    artist = Artist.new(result)
+    return artist
+  end
+
+  def self.all()
+    sql = "SELECT * FROM artists"
+    artist_data = SqlRunner.run(sql)
+    artists = map_items(artist_data)
+    return artists
+  end
+  
+  def self.map_items(artist_data)
+    return artist_data.map { |artist| Artist.new(artist) }
+  end
+
+
 end

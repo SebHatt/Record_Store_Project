@@ -39,5 +39,35 @@ class Album
       values = [@id]
       SqlRunner.run( sql, values )
     end
-    
-  end
+
+    def self.find(id)
+      sql = "SELECT * FROM albums
+      WHERE id = $1"
+      values = [id]
+      result = SqlRunner.run(sql ,values).first
+      album = Album.new(result)
+      return album
+    end
+
+    def self.all()
+      sql = "SELECT * FROM albums"
+      album_data = SqlRunner.run(sql)
+      albums = map_items(album_data)
+      return albums
+    end
+
+    def self.map_items(album_data)
+      return album_data.map { |album| Album.new(album) }
+    end
+
+    def update()
+      sql = "UPDATE albums
+      SET (title, genre, cost_price,
+        retail_price, stock_level, artist_id)
+        VALUES ($1, $2, $3, $4, $5, $6)
+        WHERE id = $7"
+        values = [@title, @genre, @cost_price, @retail_price, @stock_level, @artist_id, @id]
+        SqlRunner.run(sql, values)
+      end
+
+    end
