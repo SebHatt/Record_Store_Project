@@ -31,7 +31,7 @@ album1 = Album.new({
   'genre' => 'Punk',
   'cost_price' => 8,
   'retail_price' => 12,
-  'stock_level' => 2,
+  'stock_level' => 10,
   'artist_id' => artist1.id
   })
 
@@ -49,7 +49,7 @@ album1 = Album.new({
       'genre' => 'Punk',
       'cost_price' => 10,
       'retail_price' => 16,
-      'stock_level' => 2,
+      'stock_level' => 7,
       'artist_id' => artist2.id
       })
 
@@ -67,7 +67,7 @@ album1 = Album.new({
           'genre' => 'Punk',
           'cost_price' => 10,
           'retail_price' => 17,
-          'stock_level' => 4,
+          'stock_level' => 15,
           'artist_id' => artist4.id
           })
 
@@ -85,7 +85,7 @@ album1 = Album.new({
               'genre' => 'Dub',
               'cost_price' => 10,
               'retail_price' => 14,
-              'stock_level' => 3,
+              'stock_level' => 6,
               'artist_id' => artist5.id
               })
 
@@ -94,7 +94,7 @@ album1 = Album.new({
                 'genre' => 'Dub',
                 'cost_price' => 12,
                 'retail_price' => 18,
-                'stock_level' => 2,
+                'stock_level' => 8,
                 'artist_id' => artist6.id
                 })
 
@@ -103,7 +103,7 @@ album1 = Album.new({
                   'genre' => 'Dub',
                   'cost_price' => 8,
                   'retail_price' => 12,
-                  'stock_level' => 3,
+                  'stock_level' => 1,
                   'artist_id' => artist7.id
                   })
 
@@ -112,7 +112,7 @@ album1 = Album.new({
                     'genre' => 'Hip-Hop',
                     'cost_price' => 7,
                     'retail_price' => 10,
-                    'stock_level' => 1,
+                    'stock_level' => 11,
                     'artist_id' => artist8.id
                     })
 
@@ -121,7 +121,7 @@ album1 = Album.new({
                       'genre' => 'Hip-Hop',
                       'cost_price' => 9,
                       'retail_price' => 15,
-                      'stock_level' => 2,
+                      'stock_level' => 13,
                       'artist_id' => artist8.id
                       })
 
@@ -130,7 +130,7 @@ album1 = Album.new({
                         'genre' => 'Hip-Hop',
                         'cost_price' => 10,
                         'retail_price' => 17,
-                        'stock_level' => 2,
+                        'stock_level' => 4,
                         'artist_id' => artist9.id
                         })
 
@@ -139,7 +139,7 @@ album1 = Album.new({
                           'genre' => 'Hip-Hop',
                           'cost_price' => 11,
                           'retail_price' => 17,
-                          'stock_level' => 3,
+                          'stock_level' => 7,
                           'artist_id' => artist9.id
                           })
 
@@ -148,7 +148,7 @@ album1 = Album.new({
                             'genre' => 'Hip-Hop',
                             'cost_price' => 14,
                             'retail_price' => 20,
-                            'stock_level' => 7,
+                            'stock_level' => 18,
                             'artist_id' => artist9.id
                             })
 
@@ -157,7 +157,7 @@ album1 = Album.new({
                               'genre' => 'Hip-Hop',
                               'cost_price' => 11,
                               'retail_price' => 15,
-                              'stock_level' => 3,
+                              'stock_level' => 4,
                               'artist_id' => artist10.id
                               })
 

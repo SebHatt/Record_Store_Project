@@ -75,4 +75,24 @@ class Album
         return artist
       end
 
+      def self.find_by_title(title)
+        sql = "SELECT * FROM
+        albums WHERE title like $1"
+        title_with_percents = "%" + title + "%"
+        values = [title_with_percents]
+        sql_result = SqlRunner.run(sql, values)
+        album = sql_result.map { |album| Album.new(album) }
+        return album[0]
+      end
+
+      # def self.stock_level()
+      #   if @stock_level <= 5
+      #     return "Low Stock! Order More!"
+      #   elsif @stock_level > 6  && @stock_level < 10
+      #     return "Ok Stock."
+      #   elsif @stock_level >= 10
+      #     return "High Stock!"
+      #   end
+      # end
+
     end

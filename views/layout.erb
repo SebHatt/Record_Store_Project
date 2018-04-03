@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Gloop Record Store</title>
 </head>
 <body>
-  <nav>
-    <a href="/"></a>
-  </nav>
   <%= yield %>
+  <nav>
+    <ul>
+      <li><a href="/search">Search Music</li>
+      <li><a href="/albums">Show Music</a></li>
+      <li><a href="/albums/new">Add Music</a></li>
+    </ul>
+  </nav>
 </body>
 </html>

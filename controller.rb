@@ -23,6 +23,17 @@ get '/albums/:id' do
   erb(:show)
 end
 
+get '/search' do
+  @artists = Artist.all
+  erb(:search)
+end
+
+post '/search' do
+  puts params
+  @album = Album.find_by_title(params['title'])
+  erb(:search_results)
+end
+
 post '/albums' do
   @album = Album.new(params)
   @album.save()
