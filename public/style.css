@@ -1,40 +1,67 @@
 body {
-    background-color: deepskyblue;
-    font-family: 'Chicle', cursive;
+  background-color: lightseagreen;
+  color: greenyellow;
+  font-family: 'Chicle', cursive;
 }
+
 
 .flex-container1 {
   display: flex;
+  flex-flow: flex-direction flex-wrap|initial|inherit;
   justify-content:left;
-  flex-wrap: wrap;
-  font-size: 18px
+  font-size: 150%;
   font-family: 'Chicle', cursive;
 }
 
 .flex-container2 {
   display: flex;
+  flex-flow: flex-direction flex-wrap|initial|inherit;
   justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  flex-wrap: wrap;
-  font-size: 18px
+  margin-top: 30px;
+  font-size: 150%;
   font-family: 'Chicle', cursive;
 }
 
 .flex-container3 {
   display: flex;
+  flex-flow: flex-direction flex-wrap|initial|inherit;
   justify-content: center;
-  align-items: center;
+  margin-top: : 50px;
+  font-size: 150%;
+  font-family: 'Chicle', cursive;
+}
+
+.flex-container4 {
+  display: flex;
+  flex-flow: flex-direction flex-wrap|initial|inherit;
+  justify-content: center;
   margin: 10px;
-  flex-wrap: wrap;
-  font-size: 18px
+  padding: 20px;
+  font-size: 150%;
   font-family: 'Chicle', cursive;
 }
 
 .all-music {
   text-align: center;
+  font-size: 150%;
 }
 
-.search {
+.new {
   text-align: center;
+  font-size: 150%;
+}
+
+.search-results {
+  text-align: center;
+  font-size: 150%;
+}
+
+.updated {
+  text-align: center;
+  font-size: 150%;
+}
+
+.deleted {
+  text-align: center;
+  font-size: 150%;
 }

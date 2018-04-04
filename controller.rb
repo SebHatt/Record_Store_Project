@@ -39,3 +39,9 @@ post '/albums' do
   @album.save()
   erb(:create)
 end
+
+post '/albums/:id/delete' do
+  @album = Album.find(params[:id].to_i)
+  @album.delete
+  erb(:deleted)
+end
