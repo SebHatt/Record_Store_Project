@@ -1,0 +1,40 @@
+body {
+    background-color: deepskyblue;
+    font-family: 'Chicle', cursive;
+}
+
+.flex-container1 {
+  display: flex;
+  justify-content:left;
+  flex-wrap: wrap;
+  font-size: 18px
+  font-family: 'Chicle', cursive;
+}
+
+.flex-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  font-size: 18px
+  font-family: 'Chicle', cursive;
+}
+
+.flex-container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  flex-wrap: wrap;
+  font-size: 18px
+  font-family: 'Chicle', cursive;
+}
+
+.all-music {
+  text-align: center;
+}
+
+.search {
+  text-align: center;
+}
