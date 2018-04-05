@@ -1,5 +1,5 @@
 body {
-  background-color: lightseagreen;
+  background: linear-gradient(to bottom right, mediumspringgreen, royalblue);
   color: greenyellow;
   font-family: 'Chicle', cursive;
 }
@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-flow: flex-direction flex-wrap|initial|inherit;
   justify-content:left;
+  margin-bottom: -40px;
   font-size: 150%;
   font-family: 'Chicle', cursive;
 }
@@ -17,7 +18,7 @@ body {
   display: flex;
   flex-flow: flex-direction flex-wrap|initial|inherit;
   justify-content: center;
-  margin-top: 30px;
+  margin-bottom: -20px;
   font-size: 150%;
   font-family: 'Chicle', cursive;
 }
@@ -26,7 +27,6 @@ body {
   display: flex;
   flex-flow: flex-direction flex-wrap|initial|inherit;
   justify-content: center;
-  margin-top: : 50px;
   font-size: 150%;
   font-family: 'Chicle', cursive;
 }
