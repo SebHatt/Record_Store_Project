@@ -1,16 +1,16 @@
 <div class="flex-container4">
-<form method="post" action="/search">
+  <form method="post" action="/search">
 
-  <label for="artist">Artist:</label>
-  <select  name="artist_id">
-    <% @artists.each do |artist| %>
-    <option value="<%= artist.id %>"> <%= artist.name %></option>
-    <% end %>
-  </select>
+    <label for="artist">Artist:</label>
+    <select  name="artist_id">
+      <% @artists.each do |artist| %>
+      <option value="<%= artist.id %>"> <%= artist.name %></option>
+      <% end %>
+    </select>
 
-  <label for="title">Title:</label>
-  <input id="title" type="text" name="title" />
+    <label for="title">Title:</label>
+    <input id="title" type="text" name="title" />
 
-  <input type="submit" value="Search Music"/>
-</form>
+    <input type="submit" value="Search Music"/>
+  </form>
 </div>

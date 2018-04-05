@@ -30,7 +30,7 @@ end
 
 post '/search' do
   puts params
-  @album = Album.find_by_title(params['title'])
+  @albums = Album.find_by_title(params['title'])
   erb(:search_results)
 end
 

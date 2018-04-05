@@ -1,14 +1,12 @@
 <div class="all-music">
-<h2>All Music:</h2>
-
-<% @albums.each do |album| %>
-<p>Artist: <%= album.artist.name() %> </p>
-<p>Title: <%= album.title() %></p>
-<p>Genre: <%= album.genre() %></p>
-<p>Cost Price: $<%= album.cost_price %></p>
-<p>Retail Price: $<%= album.retail_price %></p>
-<p>Stock Level: <%= album.stock_level %> units</p>
-<!-- <p><a href="/albums/<%= album.id %>">Update Stock Level</a></p> -->
-<hr/>
-<% end %>
+  <h2>All Music:</h2>
+  <% @albums.each do |album| %>
+  <p>Artist: <%= album.artist.name() %> </p>
+  <p>Title: <%= album.title() %></p>
+  <p>Genre: <%= album.genre() %></p>
+  <p>Cost Price: $<%= album.cost_price %></p>
+  <p>Retail Price: $<%= album.retail_price %></p>
+  <p>Stock Level: <%= album.stock_level %> units</p>
+  <hr/>
+  <% end %>
 </div>

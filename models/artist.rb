@@ -8,7 +8,7 @@ class Artist
     @id = options['id'].to_i if options['id']
     @name = options['name']
   end
-
+  
   def save()
     sql = "INSERT INTO artists (name)
     VALUES ($1)
@@ -46,7 +46,7 @@ class Artist
     artists = map_items(artist_data)
     return artists
   end
-  
+
   def self.map_items(artist_data)
     return artist_data.map { |artist| Artist.new(artist) }
   end

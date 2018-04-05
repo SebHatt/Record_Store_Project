@@ -1,28 +1,28 @@
 <div class="new">
-<form method="post" action="/albums">
+  <form method="post" action="/albums">
 
-  <label for="artist">Artist:</label>
-  <select  name="artist_id">
-    <% @artists.each do |artist| %>
-    <option value="<%= artist.id %>"> <%= artist.name %></option>
-    <% end %>
-  </select>
+    <label for="artist">Artist:</label>
+    <select  name="artist_id">
+      <% @artists.each do |artist| %>
+      <option value="<%= artist.id %>"> <%= artist.name %></option>
+      <% end %>
+    </select>
 
-  <label for="title">Title:</label>
-  <input id="title" type="text" name="title" />
+    <label for="title">Title:</label>
+    <input id="title" type="text" name="title" />
 
-  <label for="genre">Genre:</label>
-  <input id="genre" type="text" name="genre"/>
+    <label for="genre">Genre:</label>
+    <input id="genre" type="text" name="genre"/>
 
-  <label for="cost-price">Cost Price:</label>
-  <input id="cost-price" type="number" name="cost_price"/>
+    <label for="cost-price">Cost Price:</label>
+    <input id="cost-price" type="number" name="cost_price"/>
 
-  <label for="retail-price">Retail Price:</label>
-  <input id="retail-price" type="number" name="retail_price"/>
+    <label for="retail-price">Retail Price:</label>
+    <input id="retail-price" type="number" name="retail_price"/>
 
-  <label for="stock-level">Stock Level:</label>
-  <input id="stock-level" type="number" name="stock_level"/>
+    <label for="stock-level">Stock Level:</label>
+    <input id="stock-level" type="number" name="stock_level"/>
 
-  <input type="submit" value="Add To Inventory"/>
-</form>
+    <input type="submit" value="Add To Inventory"/>
+  </form>
 </div>
